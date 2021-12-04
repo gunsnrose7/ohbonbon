@@ -4,30 +4,67 @@
     <title>ohbonbon flowerstudio</title>
     <meta charset="utf-8">
     <style>
-      a{
-        color: blue;
-        text-decoration: none;
-        }
-        h1 {
-          font-size: 60px;
-          text-align: center;
-        }
+    a{
+      color: black;
+      text-decoration: none;
+      }
+      #active {
+        color: red;
+      }
+      .saw {
+        color: gray;
+      }
+      h1 {
+        font-size: 60px;
+        text-align: center;
+        border-bottom:2px solid black;
+        margin:0;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+      li {
+        font-size: 25px;
+      }
+      ol{
+        border-right: 1px solid black;
+        width: 150px;
+        margin: 0;
+        padding: 30px;
+      }
+      body{
+        margin: 0;
+      }
+      img, iframe { display: block; margin: 20px auto; }
+      #grid {
+        display:grid;
+        grid-template-columns: 150px 1fr
+      }
+      #grid p {
+      padding-left: 85px;
+      }
     </style>
   </head>
   <body>
-    <h1><a href="index.html">Ohbonbon Flowerstudio</h1>
-    <ol>
-      <li><a href="1.html">Home</a></li>
-      <li><a href="2.html">Gallery</a></li>
-      <li><a href="3.html" style="color:red;text-decoration:underline">Location</a></li>
-    </ol>
-    <h2><strong>Location</strong></h2>
-    <p><img src="location.jpg" width="500"><br>
-    주소: 서울 송파구 양재대로71길 27-22 1층 101호 05640<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(지번)서울 송파구 방이동 199-9 1층 101호)<br>
-    연락처 : 0507-1429-3788 <br>홈페이지 : <a href="http://instagram.com/ohbonbon_flowerstudio" target="_blank" title="instagram">http://instagram.com/ohbonbon_flowerstudio</a><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://blog.naver.com/oh_bon_bon"target="_blank" title="blog">https://blog.naver.com/oh_bon_bon</a></p>
-    <p style="margin-top:40px;">예약제로 운영하고 있습니다.<br>
-      꽃 상품이 필요하신 날의 <u><strong>2일 전</strong></u>에 문의 주시면 원하시는 상품을 가장 예쁘게 준비해드릴 수 있습니다.</p>
+    <h1><a href="index.html">Ohbonbon Flowerstudio</a></h1>
+      <div id="grid">
+        <ol>
+          <li><a href="1.html" class="saw">Home</a></li>
+          <li><a href="2.html" class="saw">Gallery</a></li>
+          <li><a href="3.html" class="saw" id="active">Location</a></li>
+        </ol>
+        <div>
+          <h2><strong>Location</strong></h2>
+          <p><img src="location.jpg" width="700"><br>
+          주소: 서울 송파구 양재대로71길 27-22 1층 101호 05640<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(지번)서울 송파구 방이동 199-9 1층 101호)<br>
+          연락처 : 0507-1429-3788 <br>홈페이지 : <a href="http://instagram.com/ohbonbon_flowerstudio" target="_blank" title="instagram">http://instagram.com/ohbonbon_flowerstudio</a><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://blog.naver.com/oh_bon_bon"target="_blank" title="blog">https://blog.naver.com/oh_bon_bon</a></p>
+          <p style="margin-top:40px;">예약제로 운영하고 있습니다.<br>
+            꽃 상품이 필요하신 날의 <u><strong>2일 전</strong></u>에 문의 주시면 원하시는 상품을 가장 예쁘게 준비해드릴 수 있습니다.</p>
+        </div>
+  </div>
   </body>
 </html>
